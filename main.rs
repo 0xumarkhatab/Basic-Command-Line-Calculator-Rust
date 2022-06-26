@@ -8,5 +8,10 @@ fn main() {
     let first=arguments.nth(1).unwrap();
     let op=arguments.nth(0).unwrap().chars().next().unwrap();
     let second=arguments.nth(0).unwrap();
-     println!("{} {} {} ",first,op,second);
+     println!("Accepted Arguments = {} {} {} ",first,op,second);
+     
+    // Converting Arguments to Flot32
+  let firstNumber  =first.parse::<f32>().unwrap();
+  let secondNumber =second.parse::<f32>().unwrap();
+    
 }
