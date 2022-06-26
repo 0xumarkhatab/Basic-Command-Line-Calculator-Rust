@@ -15,3 +15,13 @@ fn main() {
   let secondNumber =second.parse::<f32>().unwrap();
     
 }
+// Performing Operations
+fn operate(a:f32,b:f32,op:char)->f32{
+match op {
+  '+'=>a+b,
+  '-'=>a-b,
+  '/'=>a/b,
+  'x'=>a*b,
+  _=>0.0
+  
+}
