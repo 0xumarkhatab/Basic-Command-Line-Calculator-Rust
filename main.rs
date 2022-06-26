@@ -13,8 +13,16 @@ fn main() {
     // Converting Arguments to Flot32
   let firstNumber  =first.parse::<f32>().unwrap();
   let secondNumber =second.parse::<f32>().unwrap();
+    output(firstNumber,secondNumber,op);
+  
     
 }
+// show output in a formated Style
+fn output(a:f32,b:f32,op:char){
+  let result = operate(a,b,op);
+  println!("Calculator Result ->  {} {} {} = {} ",a,op,b,result);
+}
+
 // Performing Operations
 fn operate(a:f32,b:f32,op:char)->f32{
 match op {
